@@ -111,7 +111,7 @@ const CheckoutPage = () => {
 
             try{
 
-                const res = await axios.post(`http://localhost:5002/api/payments/bank`, formData, {
+                const res = await axios.post(`https://reactjsexpress-sg40.onrender.com/api/payments/bank`, formData, {
                     headers: { 'Content-Type': 'multipart/form-data' }
                 });
 
@@ -162,7 +162,7 @@ const CheckoutPage = () => {
 
             try{
 
-                const { data } = await axios.post(`http://localhost:5002/create-payment-intent`, {
+                const { data } = await axios.post(`https://reactjsexpress-sg40.onrender.com/create-payment-intent`, {
                     amount: gdtotal
                 });
 

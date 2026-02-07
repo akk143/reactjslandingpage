@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
-const BASEURL = `http://localhost:5002/api/contacts`;
+const BASEURL = `https://reactjsexpress-sg40.onrender.com/api/contacts`;
 
 export const submitContactForm = createAsyncThunk('contactform/formsubmit', async (formData, { rejectWithValue }) => {
     try{
